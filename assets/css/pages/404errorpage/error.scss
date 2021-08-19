@@ -1,0 +1,80 @@
+.error {
+  padding: 100px 0;
+  @include max-breakpoint(1199) {
+    padding: 80px 0;
+  }
+  @include max-breakpoint(767) {
+    padding: 30px 0;
+  }
+  &__wrap {
+    text-align: center;
+    &-404 {
+      color: #333;
+      font-size: 150px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      line-height: 1;
+    }
+    &-move {
+      color: #687188;
+      line-height: 28px;
+      margin-bottom: 25px;
+    }
+    &-button {
+      position: relative;
+      input {
+        width: 100%;
+        padding: 5px 60px 5px 20px;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+      }
+      i {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+    }
+    &-home {
+      color: #fff;
+      position: relative;
+      background-color: transparent;
+      z-index: 1;
+      padding: 12px 35px;
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #ff324d;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+        width: 50%;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #ff324d;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+        width: 50%;
+      }
+      &:hover {
+        color: #ff324d;
+        border: 1px solid #ff324d;
+        background-color: #fff;
+        &:after {
+          width: 0;
+        }
+        &:before {
+          width: 0;
+        }
+      }
+    }
+  }
+}

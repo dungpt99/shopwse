@@ -1,0 +1,75 @@
+.git {
+  padding: 80px 0;
+  &__left {
+    &-title {
+      font-weight: 700;
+    }
+    &-lorem {
+      color: #687188;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+    &-form {
+      .form__button {
+        padding: 12px 35px;
+        border: 1px solid #ff324d;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+        z-index: 1;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          background-color: #ff324d;
+          z-index: -1;
+          transition: all 0.3s ease-in-out;
+          width: 50%;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background-color: #ff324d;
+          z-index: -1;
+          transition: all 0.3s ease-in-out;
+          width: 50%;
+        }
+        &:hover {
+          color: #ff324d;
+          &:after {
+            width: 0;
+          }
+          &:before {
+            width: 0;
+          }
+        }
+      }
+      span {
+        input {
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+          padding: 8px 15px;
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__right {
+    width: 100%;
+    height: 100%;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/*=============Stakeholder=================*/
+.stakeholder {
+  margin-bottom: 100px;
+  &__slider {
+    &-item {
+      img {
+        opacity: 0.7;
+        transition: 0.5s;
+      }
+      &:hover {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+/*====================End stakeholder=======================*/

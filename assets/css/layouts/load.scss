@@ -1,0 +1,47 @@
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.load {
+  background-color: #fff;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  z-index: 9999;
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+  &__jump {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 64px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #ff324d;
+      animation-name: jump;
+      animation-iteration-count: infinite;
+      animation-duration: 0.5s;
+    }
+    #item1 {
+      animation-timing-function: linear;
+    }
+    #item2 {
+      animation-timing-function: ease-out;
+    }
+    #item3 {
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 0.98);
+    }
+  }
+}
+@keyframes jump {
+  50% {
+    margin-top: 70px;
+  }
+}

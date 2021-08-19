@@ -1,0 +1,44 @@
+/*=====================Sub=====================*/
+.color1 {
+  background-color: #ff324d;
+  .sub {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px 40px 0;
+    &__text {
+      font-weight: 700;
+      text-transform: capitalize;
+      color: #fff;
+      font-size: 26px;
+      font-family: "roboto";
+    }
+    &__input {
+      position: relative;
+      width: 30%;
+      input {
+        height: 50px;
+        padding: 8px 15px;
+        width: 100%;
+        font-weight: 400;
+      }
+      button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 35px;
+        color: #fff;
+        background-color: #343a40;
+        border: 1px solid #343a40;
+      }
+      @include max-breakpoint(768) {
+        margin-left: 100px;
+        width: 70%;
+      }
+    }
+    @include max-breakpoint(768) {
+      display: list-item;
+      list-style: none;
+    }
+  }
+}
+/*=====================End=====================*/

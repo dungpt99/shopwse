@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link bootrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- End  -->
+    <!-- Link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/fontawesome.min.css">
+    <!-- End -->
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- End -->
+    <!-- Link css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- end -->
+    <title>About us</title>
+</head>
+<body>
+    <!-- Load -->
+    <div class="load">
+        <ul class="load__jump">
+            <li class="load__jump-item" id="item1"></li>
+            <li class="load__jump-item" id="item2"></li>
+            <li class="load__jump-item" id="item3"></li>
+        </ul>
+    </div>
+    <!-- End load -->
+    <!-- Home popup section -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!--         <h4 class="modal-title">Modal Header</h4> -->
+                </div>
+                <div class="modal-body text-center">
+                    <h1>Subscribe And Get 25% Discount!</h1>
+                    <p>Subscribe to the newsletter to receive updates about new products.</p>
+                    <input type="email" placeholder="Enter your email"> <br>
+                    <button class="btn">Subscribe</button>
+                    <div class="alert">
+                        <input type="checkbox">
+                        <span class="alert__text">Don't show this popup again!</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!--         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End home popup section -->
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="header__topbar">
+                <div class="header__topbar-left">
+                    <ul class="left__list">
+                        <li class="left__list-language">
+                            <a href="#">
+                                <img class="language__img" src="assets/images/eng.png" alt="">
+                                <span class="language__text">English</span>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="language__select language__hidden">
+                                <li>
+                                    <img src="assets/images/eng.png" alt="">
+                                    <div class="language__select-text">English</div>
+                                </li>
+                                <li>
+                                    <img src="assets/images/fn.png" alt="">
+                                    <div class="language__select-text">France</div>
+                                </li>
+                                <li>
+                                    <img src="assets/images/us.png" alt="">
+                                    <div class="language__select-text">United States</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="left__list-money">
+                            <a href="#">
+                                <span class="money__text">USD</span>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="money__dropdown language__hidden">
+                                <div class="money__dropdown-type">USD</div>
+                                <div class="money__dropdown-type">EURO</div>
+                                <div class="money__dropdown-type">GBR</div>
+                            </div>
+                        </li>
+                        <li class="left__list-number">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <span class="number__icon" class="number__text">123-456-7890</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__topbar-right">
+                    <ul class="right__list">
+                        <li class="right__list-compare">
+                            <a href="#">
+                                <i class="fa fa-random" aria-hidden="true"></i>
+                                <span class="compare__text">Compare</span>
+                            </a>
+                        </li>
+                        <li class="right__list-wishlist">
+                            <a href="#">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="wishlist__text">Wishlist</span>
+                            </a>
+                        </li>
+                        <li class="right__list-login">
+                            <a href="#">
+                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                                <span class="user__text">Login</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 100%;margin: 0;">
+        <div class="background">
+            <div class="container">
+                <div class="header__navbar ">
+                    <div class="header__navbar-left">
+                        <img src="assets/images/logo_dark.png" alt="" class="left__img">
+                    </div>
+                    <ul class="header__navbar-mid dropmenu">
+                        <li class="mid__text">
+                            <a href="#">
+                                <div class="mid__text-span" data-show="home">
+                                    <span class="span__text" style="color: #dc3545;">Home</span>
+                                    <i style="color: #dc3545;" class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="mid__text-sub" id="home">
+                                    <li class="sub__item">Fashion1</li>
+                                    <li class="sub__item">Fashion2</li>
+                                    <li class="sub__item">Furniture1</li>
+                                    <li class="sub__item">Furniture2</li>
+                                    <li class="sub__item">Electronics1</li>
+                                    <li class="sub__item">Electronics2</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="mid__text">
+                            <a href="#">
+                                <div class="mid__text-span" data-show="pages">
+                                    <span>Pages</span>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="mid__text-sub" id="pages">
+                                    <li class="sub__item">About us</li>
+                                    <li class="sub__item">Contact us</li>
+                                    <li class="sub__item">Faq</li>
+                                    <li class="sub__item">404 error page</li>
+                                    <li class="sub__item">Login</li>
+                                    <li class="sub__item">Register</li>
+                                    <li class="sub__item">Terms and Condition</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="mid__text">
+                            <a href="#">
+                                <div class="mid__text-span">
+                                    <span>Products</span>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                                <div class="mid__text-display">
+                                    <div class="sub__group">
+                                        <ul class="sub__item0">
+                                            <li class="sub__item2" style="text-transform: uppercase;font-weight: bold;">
+                                                Women's</li>
+                                            <li class="sub__item2">Vestibulum sed</li>
+                                            <li class="sub__item2">Donec Portititor</li>
+                                            <li class="sub__item2">Donec Vintae</li>
+                                            <li class="sub__item2">Curabitu tempus</li>
+                                            <li class="sub__item2">Vitamus and tortor</li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub__group">
+                                        <ul class="sub__item0">
+                                            <li class="sub__item2" style="text-transform: uppercase;font-weight: bold;">
+                                                Men's</li>
+                                            <li class="sub__item2">Fashion2</li>
+                                            <li class="sub__item2">Furniture1</li>
+                                            <li class="sub__item2">Furniture2</li>
+                                            <li class="sub__item2">Electronics1</li>
+                                            <li class="sub__item2">Electronics2</li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub__group">
+                                        <ul class="sub__item0">
+                                            <li class="sub__item2" style="text-transform: uppercase;font-weight: bold;">
+                                                Kid's</li>
+                                            <li class="sub__item2">Fashion2</li>
+                                            <li class="sub__item2">Furniture1</li>
+                                            <li class="sub__item2">Furniture2</li>
+                                            <li class="sub__item2">Electronics1</li>
+                                            <li class="sub__item2">Electronics2</li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub__group">
+                                        <ul class="sub__item0">
+                                            <li class="sub__item2" style="text-transform: uppercase;font-weight: bold;">
+                                                Accesorries</li>
+                                            <li class="sub__item2">Fashion2</li>
+                                            <li class="sub__item2">Furniture1</li>
+                                            <li class="sub__item2">Furniture2</li>
+                                            <li class="sub__item2">Electronics1</li>
+                                            <li class="sub__item2">Electronics2</li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub__img">
+                                        <div class="sub__img-group">
+                                            <div class="group__img">
+                                                <img src="assets/images/menu_banner11.jpg" alt="">
+                                            </div>
+                                            <div class="group__text">
+                                                <div class="group__text-sale">10% Off</div>
+                                                <div class="group__text-pro">Wooden chair</div>
+                                            </div>
+                                        </div>
+                                        <div class="sub__img-group">
+                                            <div class="group__img">
+                                                <img src="assets/images/menu_banner22.jpg" alt="">
+                                            </div>
+                                            <div class="group__text">
+                                                <div class="group__text-sale">15% Off</div>
+                                                <div class="group__text-pro">Wooden chair</div>
+                                            </div>
+                                        </div>
+                                        <div class="sub__img-group">
+                                            <div class="group__img">
+                                                <img src="assets/images/menu_banner33.jpg" alt="">
+                                            </div>
+                                            <div class="group__text">
+                                                <div class="group__text-sale">23% Off</div>
+                                                <div class="group__text-pro">Wooden chair</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mid__text">
+                            <a href="#">
+                                <div class="mid__text-span" data-show="blog">
+                                    <span>Blog</span>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="mid__text-sub" id="blog">
+                                    <li class="sub__item">Fashion1</li>
+                                    <li class="sub__item">Fashion2</li>
+                                    <li class="sub__item">Furniture1</li>
+                                    <li class="sub__item">Furniture2</li>
+                                    <li class="sub__item">Electronics1</li>
+                                    <li class="sub__item">Electronics2</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="mid__text">
+                            <a href="#">
+                                <div class="mid__text-span" data-show="shop">
+                                    <span>Shop</span>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="mid__text-sub" id="shop">
+                                    <li class="sub__item">Fashion1</li>
+                                    <li class="sub__item">Fashion2</li>
+                                    <li class="sub__item">Furniture1</li>
+                                    <li class="sub__item">Furniture2</li>
+                                    <li class="sub__item">Electronics1</li>
+                                    <li class="sub__item">Electronics2</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="mid__text">
+                            <a href="#">
+                                <div class="mid__text-span" data-show="contact">
+                                    <span>Contact us</span>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="mid__text-sub" id="contact">
+                                    <li class="sub__item">Fashion1</li>
+                                    <li class="sub__item">Fashion2</li>
+                                    <li class="sub__item">Furniture1</li>
+                                    <li class="sub__item">Furniture2</li>
+                                    <li class="sub__item">Electronics1</li>
+                                    <li class="sub__item">Electronics2</li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header__navbar-right">
+                        <div class="right__icon1">
+                            <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"
+                                    aria-hidden="true"></i></button>
+                            <div id="myOverlay" class="overlay">
+                                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                                <div class="overlay-content">
+                                    <form action="/action_page.php">
+                                        <input type="text" placeholder="Search..\" name="search">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right__icon2">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <div class="right__icon2-sub">
+                                <div class="sub__product">
+                                    <div class="sub__product-item">
+                                        <div class="item__img">
+                                            <img src="assets/images/cart_thamb1.jpg" alt="">
+                                        </div>
+                                        <div class="item__information">
+                                            <div class="item__information-inf">
+                                                <div class="inf__name">
+                                                    <a href="">Variable Product 001</a>
+                                                </div>
+                                                <div class="inf__prices">
+                                                    1 x $78.00
+                                                </div>
+                                            </div>
+                                            <div class="item__information-close">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub__product-item">
+                                        <div class="item__img">
+                                            <img src="assets/images/cart_thamb2.jpg" alt="">
+                                        </div>
+                                        <div class="item__information">
+                                            <div class="item__information-inf">
+                                                <div class="inf__name">
+                                                    <a href="">Ornane Sed Consequat</a>
+                                                </div>
+                                                <div class="inf__prices">
+                                                    1 x $81.00
+                                                </div>
+                                            </div>
+                                            <div class="item__information-close">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub__total">
+                                        <div class="sub__total-text">
+                                            <div class="text__total">
+                                                Subtotal:
+                                            </div>
+                                            <div class="text__prices">
+                                                $ 159.00
+                                            </div>
+                                        </div>
+                                        <div class="sub__total-btn">
+                                            <div class="btn__view">
+                                                <button class="btn__view-item">
+                                                    <div class="item__text">
+                                                        View cart
+                                                    </div>
+                                                </button>
+                                            </div>
+                                            <div class="btn__check">
+                                                <button class="btn__view-item">
+                                                    <div class="item__text">
+                                                        Checkout
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub__prices"></div>
+                            </div>
+                        </div>
+                        <a class="right_icon3 visible">
+                            <i class="fa fa-bars " aria-hidden="true"></i>
+                        </a>
+                        <a class="right_icon4 hidden">
+                            <i class="fa fa-times " aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+    <!-- About -->
+        <div class="color">
+            <div class="container">
+                <div class="login">
+                    <div class="login__left">About us</div>
+                    <div class="login__right">
+                        <ul class="login__right-text">
+                            <li>Home</li>
+                            <li>
+                                <div class="text__icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                                <div class="text__item">Pages</div>
+                            </li>
+                            <li>
+                                <div class="text__icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                                <div class="text__item">About us</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    <!-- End about -->
+    <!-- Content -->
+    <div class="content">
+        <div class="container">
+            <div class="content__wwa">
+                <div class="content__wwa-left">
+                    <img src="assets/images/about_img.jpg" alt="">
+                </div>
+                <div class="content__wwa-right">
+                    <div class="right__title">Who We Are</div>
+                    <p class="right__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam ipsa, possimus veniam
+                        officia fugiat natus temporibus explicabo animi incidunt iusto impedit dolore, asperiores illo praesentium. Ducimus
+                        animi quidem corrupti?</p>
+                    <p class="right__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam ipsa, possimus veniam officia fugiat natus temporibus explicabo animi incidunt iusto impedit dolore, asperiores illo praesentium. Ducimus animi quidem corrupti?</p>
+                </div>
+            </div>
+        </div>        
+        <div class="content__why">
+            <div class="container">
+            <div class="content__why-title">Why choose us?</div>
+            <div class="content__why-lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae rerum ex illum ipsum necessitatibus! Veritatis, quis natus. Ab eos at, quod suscipit laboriosam tempore aliquam enim, nam voluptatem sed dolore?</div>
+            <ul class="content__why-box">
+                <li class="box__item">
+                    <div class="box__item-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                    <div class="box__item-text">Creative Design</div>
+                    <div class="box__item-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+                </li>
+                <li class="box__item">
+                    <div class="box__item-icon"><i class="fa fa-window-restore" aria-hidden="true"></i></div>
+                    <div class="box__item-text">Flexible Layouts</div>
+                    <div class="box__item-content">There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered alteration in some form</div>
+                </li>
+                <li class="box__item">
+                    <div class="box__item-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="box__item-text">Email Marketing</div>
+                    <div class="box__item-content">There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered alteration in some form</div>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="container">
+            <div class="content__otm">
+            <div class="content__otm-title">Our Team Members</div>
+            <div class="content__otm-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio in, eaque consequatur deserunt pariatur tempora eveniet voluptatem doloremque cumque quibusdam, quasi enim modi nemo error libero veritatis a officiis cupiditate?</div>
+            <ul class="content__otm-member">
+                <li class="member__item">
+                    <div class="member__item-img">
+                        <img src="assets/images/team_img1.jpg" alt="" class="member__item-img">
+                        <div class="img__black"></div>
+                        <ul class="img__icon">
+                            <li class="img__icon-item"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="member__item-name">John Muniz</div>
+                    <div class="member__item-position">Project Engineer</div>
+                </li>
+                <li class="member__item">
+                    <div class="member__item-img">
+                        <img src="assets/images/team_img2.jpg" alt="" class="member__item-img">
+                        <div class="img__black"></div>
+                        <ul class="img__icon">
+                            <li class="img__icon-item"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="member__item-name">Alea Brooks</div>
+                    <div class="member__item-position">Graphics Designer</div>
+                </li>
+                <li class="member__item">
+                    <div class="member__item-img">
+                        <img src="assets/images/team_img3.jpg" alt="" class="member__item-img">
+                        <div class="img__black"></div>
+                        <ul class="img__icon">
+                            <li class="img__icon-item"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="member__item-name">Anders Glick</div>
+                    <div class="member__item-position">Software Developer</div>
+                </li>
+                <li class="member__item">
+                    <div class="member__item-img">
+                        <img src="assets/images/team_img4.jpg" alt="" class="member__item-img">
+                        <div class="img__black"></div>
+                        <ul class="img__icon">
+                            <li class="img__icon-item"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                            <li class="img__icon-item"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="member__item-name">Richard Tice</div>
+                    <div class="member__item-position">Web Developer</div>
+                </li>
+            </ul>
+        </div>
+        </div> 
+        <div class="content__review">
+            <div class="container">
+            <div class="content__review-ocs">Our Client Say!</div>
+            <div class="content__review-slide">
+                <ul class="slide__item">
+                        <li class="slide__item-profile active">
+                            <div class="profile__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur exercitationem cupiditate temporibus provident, ullam, odit animi eaque commodi, non rerum alias officiis et reprehenderit? Illo qui eligendi temporibus corporis sequi?</div>
+                            <div class="profile__img">
+                                <img src="assets/images/user_img1.jpg" alt="">
+                                <div class="profile__img-name">
+                                    <h6>John Becker</h6>
+                                    <span>Desinger</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide__item-profile">
+                            <div class="profile__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur exercitationem cupiditate temporibus provident, ullam, odit animi eaque commodi, non rerum alias officiis et reprehenderit? Illo qui eligendi temporibus corporis sequi?</div>
+                            <div class="profile__img">
+                                <img src="assets/images/user_img2.jpg" alt="">
+                                <div class="profile__img-name">
+                                    <h6>John Becker</h6>
+                                    <span>Desinger</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide__item-profile">
+                            <div class="profile__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur exercitationem
+                                cupiditate temporibus provident, ullam, odit animi eaque commodi, non rerum alias officiis et reprehenderit?
+                                Illo qui eligendi temporibus corporis sequi?</div>
+                            <div class="profile__img">
+                                <img src="assets/images/user_img3.jpg" alt="">
+                                <div class="profile__img-name">
+                                    <h6>John Becker</h6>
+                                    <span>Desinger</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide__item-profile">
+                            <div class="profile__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur exercitationem
+                                cupiditate temporibus provident, ullam, odit animi eaque commodi, non rerum alias officiis et reprehenderit?
+                                Illo qui eligendi temporibus corporis sequi?</div>
+                            <div class="profile__img">
+                                <img src="assets/images/user_img4.jpg" alt="">
+                                <div class="profile__img-name">
+                                    <h6>John Becker</h6>
+                                    <span>Desinger</span>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                <div class="slide__button">
+                    <span class="slide__button-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+                    <span class="slide__button-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="container">
+            <ul class="content__service">
+                <li class="content__service-icon">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <p class="icon__title">Free Delivery</p>
+                    <div class="icon__lorem">If you are going to use of Lorem, you need to be sure there anything</div>
+                </li>
+                <li class="content__service-icon">
+                    <i class="fa fa-repeat" aria-hidden="true"></i>
+                    <p class="icon__title">30 Day return</p>
+                    <div class="icon__lorem">If you are going to use of Lorem, you need to be sure there anything</div>
+                </li>
+                <li class="content__service-icon">
+                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                    <p class="icon__title">24/7 Support</p>
+                    <div class="icon__lorem">If you are going to use of Lorem, you need to be sure there anything</div>
+                </li>  
+            </ul>
+    </div>  
+    </div>
+    <!-- End content -->
+    <!-- sub -->
+    <div class="color1">
+        <div class="container">
+            <div class="sub">
+                <div class="sub__text">
+                    Subscribe Our Newsletter
+                </div>
+                <div class="sub__input">
+                    <input type="email" placeholder="Enter Email Address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sub -->
+    <!-- Footer -->
+    <div class="information">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="information__contact">Contact us</div>
+                    <div class="information__text">
+                        <div class="information__text-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="information__text-text1">123 Street, Old Trafford, NewYork, USA</div>
+                    </div>
+                    <div class="information__text">
+                        <div class="information__text-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="information__text-text1"><a href="#">info@sitename.com</a></div>
+                    </div>
+                    <div class="information__text">
+                        <div class="information__text-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                        <div class="information__text-text1">+ 457 789 789 65</div>
+                    </div>
+                    <div class="information__icon">
+                        <i style="background-color: #687188;" class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i style="background-color: #17a2b8;" class="fa fa-twitter" aria-hidden="true"></i>
+                        <i style="background-color: #dc3545;" class="fa fa-google-plus" aria-hidden="true"></i>
+                        <i style="background-color: red;" class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <i style="background-color: #0f899c;" class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="information__contact">Usefull link</div>
+                    <div class="information__text1">
+                        <div class="information__text1-text">About us</div>
+                        <div class="information__text1-text">FAQ</div>
+                        <div class="information__text1-text">Location</div>
+                        <div class="information__text1-text">Affiliate</div>
+                        <div class="information__text1-text">Contact</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="information__contact">My account</div>
+                    <div class="information__text1">
+                        <div class="information__text1-text">My Account</div>
+                        <div class="information__text1-text">Discount</div>
+                        <div class="information__text1-text">Returns</div>
+                        <div class="information__text1-text">Orders History</div>
+                        <div class="information__text1-text">Order Tracking</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="information__contact">Category</div>
+                    <div class="information__text1">
+                        <div class="information__text1-text">Men</div>
+                        <div class="information__text1-text">Women</div>
+                        <div class="information__text1-text">Kids</div>
+                        <div class="information__text1-text">Best seller</div>
+                        <div class="information__text1-text">New Arrivals</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="information__contact">Contact info</div>
+                    <div class="information__text1">
+                        <div class="information__text1-text">123 Street, Old Trafford, New South London, UK</div>
+                        <div class="information__text1-text">info@sitename.com</div>
+                        <div class="information__text1-text">+ 457 789 789 65</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="information__footer">
+                        <div class="information__footer-text">
+                            <footer>© 2020 All Rights Reserved by Bestwebcreator</footer>
+                        </div>
+                        <div class="information__footer-bank">
+                            <img src="assets/images/visa.png" alt="">
+                            <img src="assets/images/paypal.png" alt="">
+                            <img src="assets/images/master_card.png" alt="">
+                            <img src="assets/images/discover.png" alt="">
+                            <img src="assets/images/amarican_express.png" alt="">
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- End of footer -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/about.js"></script>
+</body>
+</html>

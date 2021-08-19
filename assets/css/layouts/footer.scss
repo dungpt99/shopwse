@@ -1,0 +1,87 @@
+.information {
+  font-family: "roboto";
+  background-color: #212529;
+  &__contact {
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-top: 80px;
+  }
+  &__text {
+    display: flex;
+    font-size: 16px;
+    color: white;
+    a {
+      color: white;
+      &:hover {
+        color: #ff324d;
+      }
+    }
+    &-text1 {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &__icon {
+    color: white;
+    i {
+      padding: 10px;
+      border-radius: 60%;
+      margin-right: 5px;
+    }
+  }
+  &__text1 {
+    color: white;
+    &-text {
+      margin-bottom: 10px;
+    }
+  }
+  &__send {
+    position: relative;
+    margin-top: 40px;
+    &-email {
+      padding: 10px 90px 10px 20px;
+      border-radius: 30px;
+      width: 100%;
+    }
+    button {
+      background-color: #ff324d;
+      color: white;
+      font-size: 20px;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      right: 5px;
+      top: 10%;
+      border: 1px solid;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    margin-top: 100px;
+    &-text {
+      color: white;
+      align-self: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    &-bank {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      img {
+        display: inline;
+        width: 49px;
+      }
+    }
+  }
+}
+.in4 {
+  margin-bottom: 20px;
+}

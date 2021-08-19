@@ -1,0 +1,48 @@
+/*===================Sale=======================*/
+.sale {
+  &__product {
+    position: relative;
+    overflow: hidden;
+    &-text0 {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      color: #292b2c;
+      font-family: "roboto";
+      text-transform: capitalize;
+      .text0__sale {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      .text0__new {
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 0.5rem;
+      }
+      .text0__shop {
+        font-size: 16px;
+        font-family: "poppins";
+        position: relative;
+      }
+      .text0__shop:before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 6px;
+        background-color: #ff324d7d;
+        top: 15px;
+      }
+    }
+    &-img {
+      transition: 0.5s;
+    }
+    &:hover {
+      .sale__product-img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+/*=====================End sale=================*/

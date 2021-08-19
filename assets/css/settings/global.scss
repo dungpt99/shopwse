@@ -1,0 +1,29 @@
+/*======================= 1,Reset Css ========================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #292b2c;
+}
+a:hover {
+  text-decoration: none;
+  color: #dc3545;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  margin-bottom: 0;
+}

@@ -1,0 +1,24 @@
+.slidefashion {
+  position: relative;
+  height: 500px;
+  @include max-breakpoint(1199) {
+    height: 400px;
+  }
+  @include max-breakpoint(991) {
+    height: 350px;
+  }
+  &__img {
+    height: 100%;
+    position: relative;
+    &-item {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      img {
+        background-size: cover;
+        object-fit: contain;
+      }
+    }
+  }
+}

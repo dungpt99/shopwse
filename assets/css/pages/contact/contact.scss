@@ -1,0 +1,57 @@
+.contact {
+  padding: 100px 0;
+  &__box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    &-icon {
+      height: 80px;
+      width: 80px;
+      border: 1px solid #ff324d;
+      overflow: hidden;
+      position: relative;
+      border-radius: 100%;
+      margin: 0 auto;
+      &:after {
+        content: "";
+        background-color: #ff324d;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        transform: scale(0);
+        border-radius: 100%;
+        z-index: -1;
+      }
+      i {
+        font-size: 34px;
+        color: #ff324d;
+        line-height: 78px;
+      }
+    }
+    &-title {
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+    &-site {
+      color: #687188;
+      line-height: 28px;
+    }
+    &:hover {
+      .contact__box-icon:after {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+      }
+      i {
+        color: #fff;
+      }
+    }
+  }
+}

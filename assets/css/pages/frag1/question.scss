@@ -1,0 +1,94 @@
+.question {
+  padding: 100px 0;
+  @include max-breakpoint(1199) {
+    padding: 80px 0;
+  }
+  @include max-breakpoint(767) {
+    padding: 30px 0;
+  }
+  &__title {
+    &-general {
+      font-weight: 700;
+      text-transform: capitalize;
+      font-size: 1.75rem;
+      @include max-breakpoint(1199) {
+        font-size: 26px;
+      }
+      @include max-breakpoint(767) {
+        font-size: 24px;
+      }
+      @include max-breakpoint(480) {
+        font-size: 20px;
+      }
+    }
+    &-content {
+      .card {
+        border: none;
+        .card-header {
+          background-color: #fff;
+          padding: 0;
+          padding-bottom: 20px;
+          margin-bottom: 0;
+          h2 {
+            cursor: pointer;
+            position: relative;
+          }
+          &:hover {
+            button:after,
+            :before {
+              background-color: #ff324d;
+            }
+            button {
+              color: #ff324d;
+            }
+          }
+          button[aria-expanded="false"]:after {
+            content: "";
+            position: absolute;
+            background-color: black;
+            width: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 4px;
+            height: 10px;
+          }
+          button[aria-expanded="false"]:before {
+            content: "";
+            position: absolute;
+            background-color: black;
+            width: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            height: 2px;
+          }
+          button {
+            padding: 0;
+            color: #292b2c;
+            font-weight: 600;
+            box-shadow: none;
+            text-decoration: none;
+            @include max-breakpoint(1199) {
+              width: 80%;
+              text-align: start;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              background-color: black;
+              width: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              right: 0;
+              height: 2px;
+            }
+          }
+        }
+        .card-body {
+          padding: 15px 0 10px 0;
+          color: #687188;
+        }
+      }
+    }
+  }
+}

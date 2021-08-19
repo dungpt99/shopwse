@@ -1,0 +1,34 @@
+/*==================Login==================*/
+.color {
+  height: 174px;
+  background-color: #f7f8fb;
+  .login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include max-breakpoint(768) {
+      display: list-item;
+      list-style: none;
+    }
+    &__left {
+      padding-top: 50px;
+      font-weight: bold;
+      font-size: 28px;
+    }
+    &__right {
+      &-text {
+        display: flex;
+        li {
+          display: flex;
+          padding-top: 50px;
+          font-size: 14px;
+          padding-left: 0.5rem;
+          @include max-breakpoint(768) {
+            padding: 0 8px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+/*=========================End=======================*/

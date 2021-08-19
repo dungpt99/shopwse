@@ -1,0 +1,59 @@
+.instagram {
+  position: relative;
+  margin-bottom: 100px;
+  &__text {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    background-color: #ffffff;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    border-radius: 80px;
+    padding: 25px;
+    transform: translate(-50%, -50%);
+    &-text1 {
+      font-weight: 500;
+      font-size: 28px;
+      font-family: "roboto";
+      color: #292b2c;
+      @include max-breakpoint(480) {
+        font-size: 20px;
+      }
+    }
+    &-icon {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 40%;
+      opacity: 0.2;
+      i {
+        font-size: 80px;
+        @include max-breakpoint(480) {
+          font-size: 60px;
+        }
+      }
+      @include max-breakpoint(480) {
+        left: 34%;
+        top: 26%;
+      }
+    }
+    @include max-breakpoint(480) {
+      width: 250px;
+    }
+  }
+  &__shop {
+    &-product {
+      overflow: hidden;
+      img {
+        transition: 0.5s;
+      }
+    }
+    &-product:hover {
+      img {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+}
